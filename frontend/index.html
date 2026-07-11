@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartElec Africa</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <!--========================
+        SIDEBAR
+    =========================-->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <div>
+
+                <h2>SmartElec</h2>
+
+                <small>Africa</small>
+
+            </div>
+
+        </div>
+
+
+
+        <ul class="menu">
+
+            <li class="active">
+
+                <a href="index.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="calcul.html">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                    <span>Calculs</span>
+
+                </a>
+
+            </li>
+            
+
+
+
+            <li>
+
+                <a href="triphase.html">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>Triphasé</span>
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="dimensionnement.html">
+
+                    <i class="fa-solid fa-ruler-combined"></i>
+
+                    <span>Dimensionnement</span>
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="solaire.html">
+
+                    <i class="fa-solid fa-solar-panel"></i>
+
+                    <span>Solaire</span>
+
+                </a>
+
+            </li>
+            
+
+
+
+            <li>
+
+                <a href="devis.html">
+
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                    <span>Devis</span>
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="parametre.html">
+
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                    <span>Parametre</span>
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="clients.html">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>Clients</span>
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="bibliotheque.html">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <span>Bibliothèque</span>
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <a href="parametres.html">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    <span>Paramètres</span>
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- Overlay Mobile -->
+
+    <div class="overlay" id="overlay"></div>
+
+
+
+    <!--========================
+        CONTENU
+    =========================-->
+
+    <main class="main">
+
+        <!--========================
+            TOPBAR
+        =========================-->
+
+        <header class="topbar">
+
+            <div class="left">
+
+                <button id="menuBtn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <h2>Dashboard</h2>
+
+            </div>
+
+
+
+            <div class="right">
+
+                <button id="theme">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+
+                <button>
+
+                    <i class="fa-solid fa-bell"></i>
+
+                </button>
+
+
+
+                <div class="profile">
+
+                    <img src="images/profile.jpg" alt="">
+
+                    <div>
+
+                        <h4>Jean Kelvin</h4>
+
+                        <small>Électricien</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+                <!--====================================
+                HERO
+        =====================================-->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="hero-text">
+
+                    <span class="badge">
+                        ⚡ Assistant Intelligent
+                    </span>
+
+                    <h1>
+                        SmartElec Africa
+                    </h1>
+
+                    <p>
+
+                        Réalisez vos calculs électriques, équilibrez vos
+                        installations triphasées, dimensionnez vos
+                        équipements et générez des devis professionnels
+                        en quelques secondes.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="calcul.html" class="btn primary">
+
+                            <i class="fa-solid fa-calculator"></i>
+
+                            Calculer
+
+                        </a>
+
+                        <a href="devis.html" class="btn secondary">
+
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                            Nouveau devis
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <img
+                        src="images/electrician.png"
+                        alt="Electricien">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!--====================================
+                STATISTIQUES
+        =====================================-->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 id="calculCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Calculs
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-file-invoice"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 id="devisCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Devis
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 id="clientCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Clients
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="card">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>
+
+                        220V
+
+                    </h2>
+
+                    <p>
+
+                        Réseau
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <!--====================================
+                ACCÈS RAPIDES
+        =====================================-->
+
+        <section class="quick-access">
+
+            <h2>
+
+                Accès rapide
+
+            </h2>
+
+            <div class="quick-grid">
+
+
+                <a href="calcul.html" class="quick-card">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                    <span>Calculs</span>
+
+                </a>
+
+
+
+                <a href="triphase.html" class="quick-card">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <span>Triphasé</span>
+
+                </a>
+
+
+
+                <a href="dimensionnement.html" class="quick-card">
+
+                    <i class="fa-solid fa-ruler-combined"></i>
+
+                    <span>Dimensionnement</span>
+
+                </a>
+
+
+
+                <a href="devis.html" class="quick-card">
+
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                    <span>Devis</span>
+
+                </a>
+
+
+
+                <a href="solaire.html" class="quick-card">
+
+                    <i class="fa-solid fa-solar-panel"></i>
+
+                    <span>Solaire</span>
+
+                </a>
+
+
+
+                <a href="clients.html" class="quick-card">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    <span>Clients</span>
+
+                </a>
+
+
+
+                <a href="bibliotheque.html" class="quick-card">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <span>Bibliothèque</span>
+
+                </a>
+
+
+
+                <a href="historique.html" class="quick-card">
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    <span>Historique</span>
+
+                </a>
+
+            </div>
+
+        </section>
+                <!--====================================
+                ACTIVITÉ RÉCENTE
+        =====================================-->
+
+        <section class="dashboard-grid">
+
+            <!-- ACTIVITÉ -->
+
+            <div class="activity">
+
+                <div class="title">
+
+                    <h2>
+
+                        Activité récente
+
+                    </h2>
+
+                    <a href="#">Voir tout</a>
+
+                </div>
+
+
+                <div class="activity-list">
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon blue">
+
+                            <i class="fa-solid fa-calculator"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                Calcul Monophasé
+
+                            </h4>
+
+                            <small>
+
+                                Il y a 2 minutes
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon yellow">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                Équilibrage Triphasé
+
+                            </h4>
+
+                            <small>
+
+                                Aujourd'hui
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon green">
+
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                Nouveau devis
+
+                            </h4>
+
+                            <small>
+
+                                Aujourd'hui
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon red">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+
+                                Nouveau client
+
+                            </h4>
+
+                            <small>
+
+                                Hier
+
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <!-- CONSEILS -->
+
+            <div class="tips">
+
+                <div class="title">
+
+                    <h2>
+
+                        Conseils
+
+                    </h2>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <p>
+
+                        Toujours équilibrer les charges entre L1, L2 et L3 afin
+                        d'éviter la surcharge d'une seule phase.
+
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    <p>
+
+                        Vérifiez toujours la section du câble avant de choisir
+                        un disjoncteur.
+
+                    </p>
+
+                </div>
+
+
+                <div class="tip-card">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <p>
+
+                        Utilisez un différentiel 30 mA pour protéger les personnes.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!--====================================
+                DERNIERS DEVIS
+        =====================================-->
+
+        <section class="recent-table">
+
+            <div class="title">
+
+                <h2>
+
+                    Derniers devis
+
+                </h2>
+
+                <a href="devis.html">
+
+                    Nouveau
+
+                </a>
+
+            </div>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Client</th>
+
+                        <th>Projet</th>
+
+                        <th>Montant</th>
+
+                        <th>État</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Entreprise Alpha</td>
+
+                        <td>Installation industrielle</td>
+
+                        <td>12 500 $</td>
+
+                        <td>
+
+                            <span class="success">
+
+                                Validé
+
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>Maison Kambale</td>
+
+                        <td>Installation résidentielle</td>
+
+                        <td>2 800 $</td>
+
+                        <td>
+
+                            <span class="warning">
+
+                                En attente
+
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>Garage Central</td>
+
+                        <td>Tableau électrique</td>
+
+                        <td>1 950 $</td>
+
+                        <td>
+
+                            <span class="danger">
+
+                                Brouillon
+
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+                <!--====================================
+                FOOTER
+        =====================================-->
+
+        <footer class="footer">
+
+            <div class="footer-left">
+
+                <h3>
+
+                    ⚡ SmartElec Africa
+
+                </h3>
+
+                <p>
+
+                    Votre assistant intelligent pour les calculs électriques,
+                    le dimensionnement et les installations monophasées,
+                    triphasées et solaires.
+
+                </p>
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <p>
+
+                    © 2026 SmartElec Africa
+
+                </p>
+
+            </div>
+
+        </footer>
+
+    </main>
+
+
+
+
+
+    <!--====================================
+            BOTTOM NAVIGATION MOBILE
+    =====================================-->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="active">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>Accueil</span>
+
+        </a>
+
+
+        <a href="calcul.html">
+
+            <i class="fa-solid fa-calculator"></i>
+
+            <span>Calculs</span>
+
+        </a>
+
+
+        <a href="triphase.html">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <span>Triphasé</span>
+
+        </a>
+
+
+        <a href="devis.html">
+
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+
+            <span>Devis</span>
+
+        </a>
+
+
+        <a href="parametre.html">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>Plus</span>
+
+        </a>
+
+    </nav>
+
+
+
+
+
+
+    <!--====================================
+            CHART JS
+    =====================================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+
+    <!--====================================
+            SCRIPT
+    =====================================-->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

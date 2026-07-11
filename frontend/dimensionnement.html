@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Dimensionnement - SmartElec Africa</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar" id="sidebar">
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<div>
+
+
+<h2>
+
+SmartElec
+
+</h2>
+
+
+<small>
+
+Africa
+
+</small>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<ul class="menu">
+
+
+<li>
+
+<a href="index.html">
+
+
+<i class="fa-solid fa-house"></i>
+
+
+<span>
+
+Dashboard
+
+</span>
+
+
+</a>
+
+</li>
+
+
+
+
+
+
+<li>
+
+<a href="calcul.html">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+<span>
+
+Calculs
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+<a href="triphase.html">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<span>
+
+Triphasé
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+
+<li class="active">
+
+
+<a href="dimensionnement.html">
+
+
+<i class="fa-solid fa-ruler-combined"></i>
+
+
+<span>
+
+Dimensionnement
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+<a href="devis.html">
+
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+
+<span>
+
+Devis
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+<a href="solaire.html">
+
+
+<i class="fa-solid fa-solar-panel"></i>
+
+
+<span>
+
+Solaire
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+</ul>
+
+
+
+</aside>
+
+
+
+
+
+
+<div class="overlay" id="overlay"></div>
+
+
+
+
+
+
+
+<main class="main">
+
+
+
+
+
+
+<!-- TOPBAR -->
+
+
+<header class="topbar">
+
+
+<div class="left">
+
+
+<button id="menuBtn">
+
+
+<i class="fa-solid fa-bars"></i>
+
+
+</button>
+
+
+
+
+<h2>
+
+Dimensionnement électrique
+
+</h2>
+
+
+
+</div>
+
+
+
+
+
+<div class="right">
+
+
+<button id="theme">
+
+
+<i class="fa-solid fa-moon"></i>
+
+
+</button>
+
+
+
+</div>
+
+
+</header>
+<!--====================================
+        HERO DIMENSIONNEMENT
+=====================================-->
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+<div class="hero-text">
+
+
+<span class="badge">
+
+⚡ Calcul installation
+
+</span>
+
+
+
+<h1>
+
+Dimensionnez vos équipements
+
+</h1>
+
+
+
+<p>
+
+Calculez la section du câble,
+le courant nécessaire et la protection
+adaptée pour vos installations.
+
+</p>
+
+
+
+</div>
+
+
+
+
+<div class="hero-image">
+
+
+<img src="images/dimensionnement-electricien.png"
+alt="Dimensionnement électrique">
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--====================================
+        PARAMETRES INSTALLATION
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+<h2>
+
+⚙️ Paramètres installation
+
+</h2>
+
+</div>
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Type réseau
+
+</label>
+
+
+
+<select id="network">
+
+
+<option value="mono">
+
+Monophasé 230V
+
+</option>
+
+
+<option value="tri">
+
+Triphasé 400V
+
+</option>
+
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Type charge
+
+</label>
+
+
+
+<select id="loadType">
+
+
+<option value="lighting">
+
+Eclairage
+
+</option>
+
+
+
+<option value="socket">
+
+Prises
+
+</option>
+
+
+
+<option value="motor">
+
+Moteur
+
+</option>
+
+
+
+<option value="heating">
+
+Chauffage
+
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--====================================
+        DONNEES ELECTRIQUES
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+
+<h2>
+
+🔌 Données électriques
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Puissance totale (W)
+
+</label>
+
+
+
+<input 
+type="number"
+id="totalPower"
+placeholder="Ex: 5000">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Tension (V)
+
+</label>
+
+
+
+<input 
+type="number"
+id="voltage"
+value="230">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Cos φ
+
+</label>
+
+
+
+<input 
+type="number"
+id="cosPhi"
+value="0.85"
+step="0.01">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Longueur câble (m)
+
+</label>
+
+
+
+<input 
+type="number"
+id="cableLength"
+placeholder="Ex: 30">
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<!--====================================
+        CALCUL DIMENSIONNEMENT
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+
+<h2>
+
+🧮 Calcul du dimensionnement
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<button 
+class="btn primary"
+id="calculateDimension">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+Calculer le dimensionnement
+
+
+</button>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--====================================
+        RESULTATS
+=====================================-->
+
+<section class="cards">
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-gauge-high"></i>
+
+
+<div>
+
+
+<h3 id="currentResult">
+
+0 A
+
+</h3>
+
+
+<p>
+
+Courant calculé
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-grip-lines"></i>
+
+
+<div>
+
+
+<h3 id="sectionResult">
+
+-- mm²
+
+</h3>
+
+
+<p>
+
+Section câble
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<div>
+
+
+<h3 id="breakerResult">
+
+-- A
+
+</h3>
+
+
+<p>
+
+Disjoncteur conseillé
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+
+<div>
+
+
+<h3 id="dropResult">
+
+0 %
+
+</h3>
+
+
+<p>
+
+Chute tension
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--====================================
+        RAPPORT TECHNIQUE
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+
+<div class="title">
+
+
+<h2>
+
+📋 Rapport technique
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="result-box">
+
+
+<p id="dimensionReport">
+
+Veuillez effectuer un calcul.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="saveDimension">
+
+
+<i class="fa-solid fa-save"></i>
+
+
+Sauvegarder
+
+
+</button>
+
+
+
+
+</div>
+
+
+</section>
+<!--====================================
+        TABLEAU SECTIONS CABLES
+=====================================-->
+
+<section class="recent-table">
+
+
+<div class="title">
+
+<h2>
+
+📏 Guide sections câbles
+
+</h2>
+
+</div>
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+
+Section
+
+</th>
+
+
+<th>
+
+Courant max approximatif
+
+</th>
+
+
+<th>
+
+Utilisation
+
+</th>
+
+
+</tr>
+
+</thead>
+
+
+
+
+<tbody>
+
+
+<tr>
+
+<td>
+
+1.5 mm²
+
+</td>
+
+
+<td>
+
+10 - 16 A
+
+</td>
+
+
+<td>
+
+Eclairage
+
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+
+2.5 mm²
+
+</td>
+
+
+<td>
+
+16 - 25 A
+
+</td>
+
+
+<td>
+
+Prises domestiques
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<td>
+
+4 mm²
+
+</td>
+
+
+<td>
+
+25 - 32 A
+
+</td>
+
+
+<td>
+
+Petites machines
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<td>
+
+6 mm²
+
+</td>
+
+
+<td>
+
+32 - 40 A
+
+</td>
+
+
+<td>
+
+Chauffage / moteurs
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+<td>
+
+10 mm²
+
+</td>
+
+
+<td>
+
+40 - 63 A
+
+</td>
+
+
+<td>
+
+Grandes charges
+
+</td>
+
+
+</tr>
+
+
+
+</tbody>
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--====================================
+        CONSEILS
+=====================================-->
+
+<section class="formulas">
+
+
+<div class="title">
+
+<h2>
+
+💡 Conseils professionnels
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="formula-grid">
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<h3>
+
+Protection
+
+</h3>
+
+
+<p>
+
+Disjoncteur ≤ câble
+
+</p>
+
+
+<small>
+
+Toujours protéger la ligne
+
+</small>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-temperature-high"></i>
+
+
+<h3>
+
+Chauffe câble
+
+</h3>
+
+
+<p>
+
+Section adaptée
+
+</p>
+
+
+<small>
+
+Eviter les surcharges
+
+</small>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-road"></i>
+
+
+<h3>
+
+Distance
+
+</h3>
+
+
+<p>
+
+Long câble = grande section
+
+</p>
+
+
+<small>
+
+Limiter chute tension
+
+</small>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-check-circle"></i>
+
+
+<h3>
+
+Normes
+
+</h3>
+
+
+<p>
+
+Contrôler installation
+
+</p>
+
+
+<small>
+
+Sécurité avant tout
+
+</small>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--====================================
+        BOTTOM NAVIGATION
+=====================================-->
+
+<nav class="bottom-nav">
+
+
+<a href="index.html">
+
+
+<i class="fa-solid fa-house"></i>
+
+
+<span>
+
+Accueil
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a href="calcul.html">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+<span>
+
+Calculs
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a href="triphase.html">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<span>
+
+Triphasé
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+<a href="dimensionnement.html" class="active">
+
+
+<i class="fa-solid fa-ruler-combined"></i>
+
+
+<span>
+
+Dimension
+
+</span>
+
+
+</a>
+
+
+
+
+
+<a href="parametres.html">
+
+
+<i class="fa-solid fa-gear"></i>
+
+
+<span>
+
+Plus
+
+</span>
+
+
+</a>
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+
+<script src="js/dimensionnement.js"></script>
+
+
+
+</body>
+
+</html>

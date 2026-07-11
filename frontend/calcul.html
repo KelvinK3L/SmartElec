@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculs électriques - SmartElec Africa</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar" id="sidebar">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-bolt"></i>
+
+<div>
+
+<h2>SmartElec</h2>
+
+<small>Africa</small>
+
+</div>
+
+</div>
+
+
+
+
+<ul class="menu">
+
+
+<li>
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>Dashboard</span>
+
+</a>
+
+</li>
+
+
+
+
+<li class="active">
+
+<a href="calcul.html">
+
+<i class="fa-solid fa-calculator"></i>
+
+<span>Calculs</span>
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="triphase.html">
+
+<i class="fa-solid fa-bolt"></i>
+
+<span>Triphasé</span>
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="dimensionnement.html">
+
+<i class="fa-solid fa-ruler-combined"></i>
+
+<span>Dimensionnement</span>
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="devis.html">
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+<span>Devis</span>
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="solaire.html">
+
+<i class="fa-solid fa-solar-panel"></i>
+
+<span>Solaire</span>
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+<div class="overlay" id="overlay"></div>
+
+
+
+
+<main class="main">
+
+
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+
+<div class="left">
+
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+<h2>Calculs électriques</h2>
+
+
+</div>
+
+
+
+
+<div class="right">
+
+
+<button id="theme">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+
+
+</div>
+
+
+</header>
+<!--====================================
+        HERO CALCUL
+=====================================-->
+
+
+
+
+
+
+
+
+<!--====================================
+        CHOIX CALCUL
+=====================================-->
+
+<section class="quick-access">
+
+
+<h2>
+
+    Outils de calcul
+
+</h2>
+
+
+
+<div class="quick-grid">
+
+
+<div class="quick-card active-tool">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<span>
+
+Loi d'Ohm
+
+</span>
+
+
+</div>
+
+
+
+<div class="quick-card">
+
+
+<i class="fa-solid fa-gauge-high"></i>
+
+
+<span>
+
+Puissance
+
+</span>
+
+
+</div>
+
+
+
+<div class="quick-card">
+
+
+<i class="fa-solid fa-plug"></i>
+
+
+<span>
+
+Courant
+
+</span>
+
+
+</div>
+
+
+
+<div class="quick-card">
+
+
+<i class="fa-solid fa-atom"></i>
+
+
+<span>
+
+Résistance
+
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!--====================================
+        LOI D'OHM
+=====================================-->
+
+
+<!--====================================
+        HERO CALCUL
+=====================================-->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <span class="badge">
+
+                ⚡ Calculateur électrique
+
+            </span>
+
+
+            <h1>
+
+                Simplifiez vos calculs
+
+            </h1>
+
+
+            <p>
+
+                Calculez rapidement la tension, le courant,
+                la puissance et la résistance pour vos
+                installations électriques.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="hero-image">
+
+            <img src="images/calcul-electricien.png"
+            alt="Calcul électrique">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<!--====================================
+        CHOIX CALCUL
+=====================================-->
+
+<section class="quick-access">
+
+
+<h2>
+
+    Outils de calcul
+
+</h2>
+
+
+
+<div class="quick-grid">
+
+
+<div class="quick-card active-tool">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<span>
+
+Loi d'Ohm
+
+</span>
+
+
+</div>
+
+
+
+<div class="quick-card">
+
+
+<i class="fa-solid fa-gauge-high"></i>
+
+
+<span>
+
+Puissance
+
+</span>
+
+
+</div>
+
+
+
+<div class="quick-card">
+
+
+<i class="fa-solid fa-plug"></i>
+
+
+<span>
+
+Courant
+
+</span>
+
+
+</div>
+
+
+
+<div class="quick-card">
+
+
+<i class="fa-solid fa-atom"></i>
+
+
+<span>
+
+Résistance
+
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!--====================================
+        LOI D'OHM
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+<h2>
+
+⚡ Loi d'Ohm
+
+</h2>
+
+</div>
+
+
+
+<p>
+
+Formule :
+
+<strong>
+
+U = R × I
+
+</strong>
+
+</p>
+
+
+
+
+<div class="form-grid">
+
+
+
+<div class="input-box">
+
+<label>
+
+Résistance (Ω)
+
+</label>
+
+
+<input 
+type="number"
+id="resistance"
+placeholder="Ex: 10">
+
+
+</div>
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Courant (A)
+
+</label>
+
+
+<input 
+type="number"
+id="courant"
+placeholder="Ex: 5">
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+<button 
+class="btn primary"
+id="calculateOhm">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+Calculer
+
+
+</button>
+
+
+
+
+
+
+
+<div class="result-box">
+
+
+<h3>
+
+Résultat
+
+</h3>
+
+
+<p id="resultOhm">
+
+En attente du calcul...
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+<!--====================================
+        AUTRES CALCULATEURS
+=====================================-->
+
+<section class="calculator-grid">
+
+
+<!-- PUISSANCE -->
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+<h2>
+⚡ Puissance électrique
+</h2>
+
+</div>
+
+
+<p>
+Formule :
+<strong>P = U × I</strong>
+</p>
+
+
+<div class="input-box">
+
+<label>
+Tension (V)
+</label>
+
+<input 
+type="number"
+id="voltagePower"
+placeholder="Ex: 220">
+
+</div>
+
+
+
+<div class="input-box">
+
+<label>
+Courant (A)
+</label>
+
+<input 
+type="number"
+id="currentPower"
+placeholder="Ex: 10">
+
+</div>
+
+
+
+<button 
+class="btn primary"
+id="btnPower">
+
+<i class="fa-solid fa-bolt"></i>
+
+Calculer
+
+</button>
+
+
+
+<div class="result-box">
+
+<p id="powerResult">
+
+Résultat : --
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- COURANT -->
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+<h2>
+🔌 Courant
+</h2>
+
+</div>
+
+
+<p>
+Formule :
+<strong>I = P / U</strong>
+</p>
+
+
+<div class="input-box">
+
+<label>
+Puissance (W)
+</label>
+
+
+<input 
+type="number"
+id="powerInput"
+placeholder="Ex: 3000">
+
+</div>
+
+
+
+<div class="input-box">
+
+<label>
+Tension (V)
+</label>
+
+
+<input 
+type="number"
+id="voltageInput"
+placeholder="Ex: 220">
+
+</div>
+
+
+
+<button 
+class="btn primary"
+id="btnCurrent">
+
+<i class="fa-solid fa-plug"></i>
+
+Calculer
+
+</button>
+
+
+
+<div class="result-box">
+
+<p id="currentResult">
+
+Résultat : --
+
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- RESISTANCE -->
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+<h2>
+🔧 Résistance
+</h2>
+
+</div>
+
+
+<p>
+Formule :
+<strong>R = U / I</strong>
+</p>
+
+
+
+<div class="input-box">
+
+<label>
+Tension (V)
+</label>
+
+
+<input 
+type="number"
+id="voltageResistance"
+placeholder="Ex: 12">
+
+</div>
+
+
+
+<div class="input-box">
+
+<label>
+Courant (A)
+</label>
+
+
+<input 
+type="number"
+id="currentResistance"
+placeholder="Ex: 2">
+
+</div>
+
+
+
+
+<button 
+class="btn primary"
+id="btnResistance">
+
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+Calculer
+
+
+</button>
+
+
+
+
+<div class="result-box">
+
+<p id="resistanceResult">
+
+Résultat : --
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ENERGIE -->
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+<h2>
+🔋 Energie
+</h2>
+
+</div>
+
+
+<p>
+Formule :
+<strong>E = P × t</strong>
+</p>
+
+
+
+<div class="input-box">
+
+<label>
+Puissance (W)
+</label>
+
+
+<input 
+type="number"
+id="energyPower"
+placeholder="Ex: 1000">
+
+</div>
+
+
+
+<div class="input-box">
+
+<label>
+Temps (heure)
+</label>
+
+
+<input 
+type="number"
+id="energyTime"
+placeholder="Ex: 5">
+
+</div>
+
+
+
+
+<button 
+class="btn primary"
+id="btnEnergy">
+
+
+<i class="fa-solid fa-battery-full"></i>
+
+Calculer
+
+
+</button>
+
+
+
+<div class="result-box">
+
+
+<p id="energyResult">
+
+Résultat : --
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!--====================================
+        FORMULES ELECTRIQUES UTILES
+=====================================-->
+
+<section class="formulas">
+
+
+<div class="title">
+
+<h2>
+
+📘 Formules électriques
+
+</h2>
+
+</div>
+
+
+
+<div class="formula-grid">
+
+
+
+<div class="formula-card">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h3>
+
+Puissance
+
+</h3>
+
+<p>
+
+P = U × I
+
+</p>
+
+<small>
+
+Watt (W)
+
+</small>
+
+</div>
+
+
+
+
+
+<div class="formula-card">
+
+<i class="fa-solid fa-gauge-high"></i>
+
+<h3>
+
+Tension
+
+</h3>
+
+<p>
+
+U = P / I
+
+</p>
+
+<small>
+
+Volt (V)
+
+</small>
+
+</div>
+
+
+
+
+
+<div class="formula-card">
+
+<i class="fa-solid fa-plug"></i>
+
+<h3>
+
+Courant
+
+</h3>
+
+<p>
+
+I = P / U
+
+</p>
+
+<small>
+
+Ampère (A)
+
+</small>
+
+</div>
+
+
+
+
+
+<div class="formula-card">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+<h3>
+
+Résistance
+
+</h3>
+
+<p>
+
+R = U / I
+
+</p>
+
+<small>
+
+Ohm (Ω)
+
+</small>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--====================================
+        HISTORIQUE CALCULS
+=====================================-->
+
+<section class="recent-table">
+
+
+<div class="title">
+
+<h2>
+
+🕒 Historique
+
+</h2>
+
+
+<button class="btn primary">
+
+Effacer
+
+</button>
+
+
+</div>
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+Calcul
+</th>
+
+
+<th>
+Valeur
+</th>
+
+
+<th>
+Date
+</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="historyTable">
+
+
+<tr>
+
+<td>
+
+Aucun calcul
+
+</td>
+
+
+<td>
+
+--
+
+</td>
+
+
+<td>
+
+--
+
+</td>
+
+
+</tr>
+
+
+</tbody>
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!--====================================
+        FOOTER
+=====================================-->
+
+<footer class="footer">
+
+
+<div>
+
+<h3>
+
+⚡ SmartElec Africa
+
+</h3>
+
+
+<p>
+
+Application professionnelle pour les
+électriciens africains.
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<p>
+
+© 2026 SmartElec Africa
+
+</p>
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+<!--====================================
+        BOTTOM NAVIGATION
+=====================================-->
+
+<nav class="bottom-nav">
+
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>
+Accueil
+</span>
+
+</a>
+
+
+
+
+<a href="calcul.html" class="active">
+
+<i class="fa-solid fa-calculator"></i>
+
+<span>
+Calculs
+</span>
+
+</a>
+
+
+
+
+<a href="triphase.html">
+
+<i class="fa-solid fa-bolt"></i>
+
+<span>
+Triphasé
+</span>
+
+</a>
+
+
+
+
+<a href="devis.html">
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+<span>
+Devis
+</span>
+
+</a>
+
+
+
+
+<a href="parametres.html">
+
+<i class="fa-solid fa-gear"></i>
+
+<span>
+Plus
+</span>
+
+</a>
+
+
+
+</nav>
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+
+<script src="js/calcul.js"></script>
+
+
+
+</body>
+
+</html>

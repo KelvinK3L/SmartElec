@@ -1,0 +1,2664 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paramètres - SmartElec Africa</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!--=============================
+        SIDEBAR
+==============================-->
+
+<aside class="sidebar" id="sidebar">
+
+
+<div class="logo">
+
+<i class="fa-solid fa-bolt"></i>
+
+<div>
+
+<h2>
+SmartElec
+</h2>
+
+<small>
+Africa
+</small>
+
+</div>
+
+</div>
+
+
+
+
+
+<ul class="menu">
+
+
+
+<li>
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>
+Dashboard
+</span>
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="calcul.html">
+
+<i class="fa-solid fa-calculator"></i>
+
+<span>
+Calculs
+</span>
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="triphase.html">
+
+<i class="fa-solid fa-bolt"></i>
+
+<span>
+Triphasé
+</span>
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="dimensionnement.html">
+
+<i class="fa-solid fa-ruler-combined"></i>
+
+<span>
+Dimensionnement
+</span>
+
+</a>
+
+</li>
+
+
+
+
+
+<li>
+
+<a href="devis.html">
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+<span>
+Devis
+</span>
+
+</a>
+
+</li>
+
+
+
+
+
+<li class="active">
+
+<a href="parametres.html">
+
+
+<i class="fa-solid fa-gear"></i>
+
+
+<span>
+Paramètres
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+
+
+
+<div class="overlay" id="overlay"></div>
+
+
+
+
+
+
+
+<!--=============================
+        MAIN
+==============================-->
+
+<main class="main">
+
+
+
+
+
+
+<!-- TOPBAR -->
+
+
+<header class="topbar">
+
+
+
+<div class="left">
+
+
+<button id="menuBtn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+
+
+<h2>
+
+Paramètres
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="right">
+
+
+<button id="theme">
+
+
+<i class="fa-solid fa-moon"></i>
+
+
+</button>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!--=============================
+        HERO PARAMETRES
+==============================-->
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+
+<span class="badge">
+
+⚡ SmartElec Africa
+
+</span>
+
+
+
+
+<h1>
+
+Gestion de votre application
+
+</h1>
+
+
+
+
+<p>
+
+Configurez votre compte, vos calculs,
+vos devis et vos préférences.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="hero-image">
+
+
+<img src="images/electricien-setting.png"
+alt="Paramètres SmartElec">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--=============================
+        MENU PARAMETRES
+==============================-->
+
+<section class="modules">
+
+
+<h2>
+
+Paramètres
+
+</h2>
+
+
+
+
+
+<div class="module-grid">
+
+
+
+
+
+
+
+<!-- COMPTE -->
+
+<div class="module">
+
+
+<i class="fa-solid fa-user-lock"></i>
+
+
+<h3>
+
+Compte
+
+</h3>
+
+
+<p>
+
+Créer un compte ou se connecter
+
+</p>
+
+
+
+<button 
+class="btn primary"
+id="openLogin">
+
+
+Connexion
+
+</button>
+
+
+
+<button 
+class="btn secondary"
+id="openRegister">
+
+
+Inscription
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- PROFIL -->
+
+<div class="module">
+
+
+<i class="fa-solid fa-user-gear"></i>
+
+
+<h3>
+
+Profil électricien
+
+</h3>
+
+
+<p>
+
+Entreprise et informations professionnelles
+
+</p>
+
+
+<button class="btn primary">
+
+
+Modifier
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- DEVIS -->
+
+<div class="module">
+
+
+<i class="fa-solid fa-file-invoice"></i>
+
+
+<h3>
+
+Paramètres devis
+
+</h3>
+
+
+<p>
+
+Devise, TVA, signatures
+
+</p>
+
+
+<button class="btn primary">
+
+
+Configurer
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CALCUL -->
+
+<div class="module">
+
+
+<i class="fa-solid fa-plug-circle-bolt"></i>
+
+
+<h3>
+
+Calcul électrique
+
+</h3>
+
+
+<p>
+
+Tension, fréquence, sécurité
+
+</p>
+
+
+<button class="btn primary">
+
+
+Configurer
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+<!--================================
+        POPUP CONNEXION
+=================================-->
+
+<div class="popup-overlay" id="loginPopup">
+
+
+<div class="popup-box">
+
+
+<button class="close-popup" id="closeLogin">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+
+
+
+
+<div class="popup-header">
+
+
+<i class="fa-solid fa-user-lock"></i>
+
+
+<h2>
+
+Connexion
+
+</h2>
+
+
+
+<p>
+
+Accédez à votre espace SmartElec
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="popup-form">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Email ou téléphone
+
+</label>
+
+
+<input 
+type="text"
+id="loginUser"
+placeholder="Ex: jean@gmail.com">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Mot de passe
+
+</label>
+
+
+<input 
+type="password"
+id="loginPassword"
+placeholder="Votre mot de passe">
+
+
+</div>
+
+
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="loginBtn">
+
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+
+Se connecter
+
+
+</button>
+
+
+
+
+
+
+<a href="#" class="forgot">
+
+Mot de passe oublié ?
+
+</a>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--================================
+        POPUP INSCRIPTION
+=================================-->
+
+<div class="popup-overlay" id="registerPopup">
+
+
+<div class="popup-box register-box">
+
+
+
+
+
+<button class="close-popup" id="closeRegister">
+
+
+<i class="fa-solid fa-xmark"></i>
+
+
+</button>
+
+
+
+
+
+
+
+<div class="popup-header">
+
+
+<i class="fa-solid fa-user-plus"></i>
+
+
+<h2>
+
+Créer un compte
+
+</h2>
+
+
+
+<p>
+
+Rejoignez SmartElec Africa
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="popup-form">
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Nom complet
+
+</label>
+
+
+
+<input
+
+type="text"
+
+id="registerName"
+
+placeholder="Jean Kelvin">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Entreprise
+
+</label>
+
+
+
+<input
+
+type="text"
+
+id="registerCompany"
+
+placeholder="KLV Electric">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Téléphone
+
+</label>
+
+
+
+<input
+
+type="tel"
+
+id="registerPhone"
+
+placeholder="+243...">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Email
+
+</label>
+
+
+
+<input
+
+type="email"
+
+id="registerEmail"
+
+placeholder="email@gmail.com">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Ville
+
+</label>
+
+
+
+<input
+
+type="text"
+
+id="registerCity"
+
+placeholder="Butembo">
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Métier
+
+</label>
+
+
+
+
+<select id="registerJob">
+
+
+
+<option>
+
+Electricien bâtiment
+
+</option>
+
+
+
+<option>
+
+Electricien industriel
+
+</option>
+
+
+
+<option>
+
+Installateur solaire
+
+</option>
+
+
+
+<option>
+
+Technicien maintenance
+
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Mot de passe
+
+</label>
+
+
+
+<input
+
+type="password"
+
+id="registerPassword"
+
+placeholder="Créer un mot de passe">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Confirmation
+
+</label>
+
+
+
+<input
+
+type="password"
+
+id="registerConfirm"
+
+placeholder="Confirmer">
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<button
+
+class="btn primary"
+
+id="registerBtn">
+
+
+<i class="fa-solid fa-user-plus"></i>
+
+
+Créer mon compte
+
+
+</button>
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+<!--================================
+        PROFIL ELECTRICIEN
+=================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+
+<div class="title">
+
+<h2>
+
+👷 Profil professionnel
+
+</h2>
+
+</div>
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Nom de l'entreprise
+
+</label>
+
+
+<input 
+type="text"
+id="settingCompany"
+placeholder="Ex: KLV Electric">
+
+
+</div>
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Nom électricien
+
+</label>
+
+
+<input 
+type="text"
+id="settingName"
+placeholder="Votre nom">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Téléphone
+
+</label>
+
+
+<input 
+type="tel"
+id="settingPhone"
+placeholder="+243...">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Ville
+
+</label>
+
+
+<input 
+type="text"
+id="settingCity"
+placeholder="Butembo">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Spécialité
+
+</label>
+
+
+<select id="settingSpeciality">
+
+
+<option>
+
+Electricien bâtiment
+
+</option>
+
+
+<option>
+
+Electricien industriel
+
+</option>
+
+
+<option>
+
+Solaire photovoltaïque
+
+</option>
+
+
+<option>
+
+Maintenance électrique
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Logo entreprise
+
+</label>
+
+
+<input 
+type="file"
+id="companyLogo"
+accept="image/*">
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="saveProfessional">
+
+
+<i class="fa-solid fa-save"></i>
+
+
+Sauvegarder profil
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--================================
+        PARAMETRES DEVIS
+=================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+
+<div class="title">
+
+
+<h2>
+
+📄 Paramètres des devis
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Devise principale
+
+</label>
+
+
+
+<select id="defaultCurrency">
+
+
+<option value="$">
+
+Dollar USD $
+
+</option>
+
+
+
+<option value="FC">
+
+Franc Congolais FC
+
+</option>
+
+
+
+</select>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Validité automatique
+
+</label>
+
+
+
+<input
+
+type="number"
+
+id="defaultValidity"
+
+value="30">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Activer TVA
+
+</label>
+
+
+
+<select id="enableTax">
+
+
+<option value="no">
+
+Non
+
+</option>
+
+
+
+<option value="yes">
+
+Oui
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Pourcentage TVA
+
+</label>
+
+
+
+<input
+
+type="number"
+
+id="taxPercent"
+
+value="16">
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="saveInvoiceSettings">
+
+
+<i class="fa-solid fa-file-invoice"></i>
+
+
+Sauvegarder devis
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--================================
+        PARAMETRES ELECTRIQUES
+=================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+
+<div class="title">
+
+
+<h2>
+
+⚡ Paramètres électriques
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Tension monophasée
+
+</label>
+
+
+
+<input
+
+type="number"
+
+id="singleVoltage"
+
+value="220">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Tension triphasée
+
+</label>
+
+
+
+<input
+
+type="number"
+
+id="threeVoltage"
+
+value="380">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Fréquence réseau
+
+</label>
+
+
+
+<input
+
+type="number"
+
+id="frequency"
+
+value="50">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Coefficient sécurité
+
+</label>
+
+
+
+<input
+
+type="number"
+
+id="securityFactor"
+
+value="1.25"
+step="0.01">
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="saveElectricalSettings">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+Sauvegarder paramètres
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+<!--================================
+        APPARENCE
+=================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+
+<h2>
+
+🎨 Apparence
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Mode application
+
+</label>
+
+
+
+<select id="appTheme">
+
+
+<option value="light">
+
+☀️ Mode clair
+
+</option>
+
+
+
+<option value="dark">
+
+🌙 Mode sombre
+
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Couleur principale
+
+</label>
+
+
+
+<select id="primaryColor">
+
+
+<option value="blue">
+
+⚡ Bleu électrique
+
+</option>
+
+
+
+<option value="yellow">
+
+🔋 Jaune énergie
+
+</option>
+
+
+
+<option value="green">
+
+🌱 Vert solaire
+
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Animation interface
+
+</label>
+
+
+
+<select id="animationMode">
+
+
+<option value="on">
+
+Activée
+
+</option>
+
+
+
+<option value="off">
+
+Désactivée
+
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Taille du texte
+
+</label>
+
+
+
+<select id="fontSize">
+
+
+<option value="normal">
+
+Normal
+
+</option>
+
+
+
+<option value="large">
+
+Grand
+
+</option>
+
+
+
+<option value="small">
+
+Petit
+
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="saveAppearance">
+
+
+<i class="fa-solid fa-palette"></i>
+
+
+Appliquer
+
+
+</button>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--================================
+        LANGUE
+=================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+
+<h2>
+
+🌍 Langue
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Langue de l'application
+
+</label>
+
+
+
+<select id="language">
+
+
+<option value="fr">
+
+🇨🇩 Français
+
+</option>
+
+
+
+<option value="en">
+
+🇬🇧 English
+
+</option>
+
+
+
+<option value="sw">
+
+🌍 Swahili
+
+</option>
+
+
+
+<option value="ln">
+
+🇨🇩 Lingala
+
+</option>
+
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="saveLanguage">
+
+
+<i class="fa-solid fa-language"></i>
+
+
+Changer langue
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--================================
+        SAUVEGARDE DONNEES
+=================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+
+<div class="title">
+
+
+<h2>
+
+💾 Données application
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+
+<p>
+
+Sauvegardez vos devis, calculs et paramètres.
+
+</p>
+
+
+
+
+
+
+
+
+<div class="action-buttons">
+
+
+
+
+
+<button
+
+class="btn primary"
+
+id="exportData">
+
+
+<i class="fa-solid fa-download"></i>
+
+
+Exporter données
+
+
+</button>
+
+
+
+
+
+
+
+
+<button
+
+class="btn primary"
+
+id="importDataBtn">
+
+
+<i class="fa-solid fa-upload"></i>
+
+
+Importer sauvegarde
+
+
+</button>
+
+
+
+
+
+<input
+
+type="file"
+
+id="importData"
+
+accept=".json"
+
+hidden>
+
+
+
+
+
+
+
+
+<button
+
+class="btn danger"
+
+id="resetData">
+
+
+<i class="fa-solid fa-trash"></i>
+
+
+Réinitialiser
+
+
+</button>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+<!--================================
+        A PROPOS SMART ELEC
+=================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card about-card">
+
+
+
+
+
+<div class="about-header">
+
+
+<div class="about-logo">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+</div>
+
+
+
+
+
+<h1>
+
+SmartElec Africa
+
+</h1>
+
+
+
+
+
+<span>
+
+Version 1.0
+
+</span>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="about-content">
+
+
+
+
+
+<p>
+
+
+<strong>
+
+SmartElec Africa
+
+</strong>
+
+est une application destinée à accompagner
+les électriciens africains dans leurs travaux
+quotidiens.
+
+
+</p>
+
+
+
+
+
+<p>
+
+Elle permet de réaliser :
+
+</p>
+
+
+
+
+
+<ul>
+
+
+<li>
+
+⚡ Calculs électriques
+
+</li>
+
+
+<li>
+
+🔌 Dimensionnement des installations
+
+</li>
+
+
+<li>
+
+📊 Équilibrage des phases triphasées
+
+</li>
+
+
+<li>
+
+📄 Création de devis professionnels
+
+</li>
+
+
+<li>
+
+☀️ Études solaires
+
+</li>
+
+
+
+</ul>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- DEVELOPPEURS -->
+
+
+<div class="developers">
+
+
+
+<h2>
+
+👨‍💻 Développement
+
+</h2>
+
+
+
+
+
+
+
+<div class="developer-card">
+
+
+
+<i class="fa-solid fa-code"></i>
+
+
+
+<div>
+
+
+<h3>
+
+KLV TECH
+
+</h3>
+
+
+<p>
+
+Développeur principal
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="developer-card">
+
+
+
+<i class="fa-solid fa-laptop-code"></i>
+
+
+
+<div>
+
+
+<h3>
+
+NAJKSOFT
+
+</h3>
+
+
+<p>
+
+Partenaire développement
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- TECHNOLOGIES -->
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CREDITS -->
+
+
+<div class="credits">
+
+
+
+<h2>
+
+❤️ Crédits
+
+</h2>
+
+
+
+
+<p>
+
+
+Conception et développement :
+
+<br>
+
+
+<strong>
+
+KLV TECH & NAJKSOFT
+
+</strong>
+
+
+
+</p>
+
+
+
+
+
+<p>
+
+
+Assistance technique et contribution : K3L
+
+
+
+</p>
+
+
+
+
+
+<p class="copyright">
+
+
+© 2026 SmartElec Africa
+
+<br>
+
+Tous droits réservés.
+
+</p>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+<!--================================
+        NAVIGATION MOBILE
+=================================-->
+
+<nav class="bottom-nav">
+
+
+<a href="index.html">
+
+
+<i class="fa-solid fa-house"></i>
+
+
+<span>
+
+Accueil
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="calcul.html">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+<span>
+
+Calculs
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="devis.html">
+
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+
+<span>
+
+Devis
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="solaire.html">
+
+
+<i class="fa-solid fa-solar-panel"></i>
+
+
+<span>
+
+Solaire
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="parametre.html" class="active">
+
+
+<i class="fa-solid fa-gear"></i>
+
+
+<span>
+
+Paramètres
+
+</span>
+
+
+</a>
+
+
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+<!--================================
+        SCRIPTS
+=================================-->
+
+
+
+<script src="js/script.js"></script>
+
+
+
+<script src="js/parametre.js"></script>
+
+
+
+
+</body>
+
+
+</html>

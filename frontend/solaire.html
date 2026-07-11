@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Solaire - SmartElec Africa</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar" id="sidebar">
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<div>
+
+
+<h2>
+
+SmartElec
+
+</h2>
+
+
+<small>
+
+Africa
+
+</small>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<ul class="menu">
+
+
+<li>
+
+
+<a href="index.html">
+
+
+<i class="fa-solid fa-house"></i>
+
+
+<span>
+
+Dashboard
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+<li>
+
+
+<a href="calcul.html">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+<span>
+
+Calculs
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+<li>
+
+
+<a href="triphase.html">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<span>
+
+Triphasé
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+<li>
+
+
+<a href="dimensionnement.html">
+
+
+<i class="fa-solid fa-ruler-combined"></i>
+
+
+<span>
+
+Dimensionnement
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+
+<li>
+
+
+<a href="devis.html">
+
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+
+<span>
+
+Devis
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+
+
+
+
+
+<li class="active">
+
+
+<a href="solaire.html">
+
+
+<i class="fa-solid fa-solar-panel"></i>
+
+
+<span>
+
+Solaire
+
+</span>
+
+
+</a>
+
+
+</li>
+
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+
+
+
+<div class="overlay" id="overlay"></div>
+
+
+
+
+
+
+
+
+<main class="main">
+
+
+
+
+
+
+<!-- TOPBAR -->
+
+
+<header class="topbar">
+
+
+<div class="left">
+
+
+<button id="menuBtn">
+
+
+<i class="fa-solid fa-bars"></i>
+
+
+</button>
+
+
+
+
+<h2>
+
+Dimensionnement solaire
+
+</h2>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="right">
+
+
+<button id="theme">
+
+
+<i class="fa-solid fa-moon"></i>
+
+
+</button>
+
+
+
+</div>
+
+
+</header>
+
+<!--====================================
+        HERO SOLAIRE
+=====================================-->
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+<div class="hero-text">
+
+
+<span class="badge">
+
+☀️ Energie solaire
+
+</span>
+
+
+
+<h1>
+
+Dimensionnez votre système solaire
+
+</h1>
+
+
+
+
+<p>
+
+Calculez la puissance des panneaux,
+la capacité batterie et l'onduleur
+nécessaire pour votre installation.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+<div class="hero-image">
+
+
+<img src="images/solaire-electricien.png"
+alt="Installation solaire">
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--====================================
+        AJOUT DES APPAREILS
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+
+<h2>
+
+🔌 Consommation quotidienne
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Nom appareil
+
+</label>
+
+
+
+<input
+type="text"
+id="deviceName"
+placeholder="Ex: Lampe LED">
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Puissance (W)
+
+</label>
+
+
+
+<input
+type="number"
+id="devicePower"
+placeholder="Ex: 15">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Nombre
+
+</label>
+
+
+
+<input
+type="number"
+id="deviceQuantity"
+value="1"
+min="1">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Heures utilisation/jour
+
+</label>
+
+
+
+<input
+type="number"
+id="deviceHours"
+placeholder="Ex: 5">
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="addDevice">
+
+
+<i class="fa-solid fa-plus"></i>
+
+
+Ajouter appareil
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+<!--====================================
+        TABLEAU CONSOMMATION
+=====================================-->
+
+<section class="recent-table">
+
+
+<div class="title">
+
+
+<h2>
+
+📋 Appareils enregistrés
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>
+
+Appareil
+
+</th>
+
+
+
+<th>
+
+Puissance
+
+</th>
+
+
+
+<th>
+
+Quantité
+
+</th>
+
+
+
+<th>
+
+Heures/jour
+
+</th>
+
+
+
+<th>
+
+Energie
+
+</th>
+
+
+
+<th>
+
+Action
+
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+
+
+<tbody id="deviceTable">
+
+
+<tr>
+
+
+<td colspan="6">
+
+Aucun appareil ajouté
+
+</td>
+
+
+</tr>
+
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--====================================
+        RESULTATS SOLAIRES
+=====================================-->
+
+<section class="cards">
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<div>
+
+
+<h3 id="dailyEnergy">
+
+0 Wh
+
+</h3>
+
+
+<p>
+
+Consommation/jour
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-solar-panel"></i>
+
+
+<div>
+
+
+<h3 id="panelPower">
+
+0 W
+
+</h3>
+
+
+<p>
+
+Puissance panneaux
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-car-battery"></i>
+
+
+<div>
+
+
+<h3 id="batteryCapacity">
+
+0 Ah
+
+</h3>
+
+
+<p>
+
+Batterie nécessaire
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<i class="fa-solid fa-plug-circle-bolt"></i>
+
+
+<div>
+
+
+<h3 id="inverterPower">
+
+0 W
+
+</h3>
+
+
+<p>
+
+Onduleur
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--====================================
+        PARAMETRES SOLAIRE
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+
+<h2>
+
+⚙️ Paramètres installation
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="form-grid">
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Heures soleil moyen/jour
+
+</label>
+
+
+
+<input
+type="number"
+id="sunHours"
+value="5">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Tension batterie
+
+</label>
+
+
+
+<select id="batteryVoltage">
+
+
+<option value="12">
+
+12 V
+
+</option>
+
+
+<option value="24">
+
+24 V
+
+</option>
+
+
+<option value="48">
+
+48 V
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+
+Autonomie (jours)
+
+</label>
+
+
+
+<input
+type="number"
+id="autonomy"
+value="1">
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<button
+class="btn primary"
+id="calculateSolar">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+Calculer système solaire
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+<!--====================================
+        RAPPORT SOLAIRE
+=====================================-->
+
+<section class="calculator-section">
+
+
+<div class="calculator-card">
+
+
+<div class="title">
+
+
+<h2>
+
+📄 Rapport installation solaire
+
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="result-box">
+
+
+<p id="solarReport">
+
+Effectuez un calcul pour obtenir
+le dimensionnement.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<button 
+class="btn primary"
+id="saveSolar">
+
+
+<i class="fa-solid fa-save"></i>
+
+
+Sauvegarder rapport
+
+
+</button>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--====================================
+        CONSEILS PHOTOVOLTAIQUE
+=====================================-->
+
+<section class="formulas">
+
+
+<div class="title">
+
+
+<h2>
+
+💡 Conseils solaires
+
+</h2>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="formula-grid">
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-sun"></i>
+
+
+<h3>
+
+Orientation
+
+</h3>
+
+
+<p>
+
+Bien orienter les panneaux
+
+</p>
+
+
+<small>
+
+Maximiser la production
+
+</small>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-battery-half"></i>
+
+
+<h3>
+
+Batterie
+
+</h3>
+
+
+<p>
+
+Profondeur décharge contrôlée
+
+</p>
+
+
+<small>
+
+Prolonger la durée de vie
+
+</small>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-temperature-high"></i>
+
+
+<h3>
+
+Installation
+
+</h3>
+
+
+<p>
+
+Eviter la chaleur
+
+</p>
+
+
+<small>
+
+Bonne ventilation
+
+</small>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="formula-card">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+<h3>
+
+Protection
+
+</h3>
+
+
+<p>
+
+Fusible + disjoncteur DC
+
+</p>
+
+
+<small>
+
+Sécurité système
+
+</small>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--====================================
+        BOTTOM NAVIGATION
+=====================================-->
+
+<nav class="bottom-nav">
+
+
+<a href="index.html">
+
+
+<i class="fa-solid fa-house"></i>
+
+
+<span>
+
+Accueil
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="calcul.html">
+
+
+<i class="fa-solid fa-calculator"></i>
+
+
+<span>
+
+Calculs
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="triphase.html">
+
+
+<i class="fa-solid fa-bolt"></i>
+
+
+<span>
+
+Triphasé
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+
+<a href="devis.html">
+
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+
+<span>
+
+Devis
+
+</span>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="solaire.html" class="active">
+
+
+<i class="fa-solid fa-solar-panel"></i>
+
+
+<span>
+
+Solaire
+
+</span>
+
+
+</a>
+
+
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+<script src="js/script.js"></script>
+
+<script src="js/solaire.js"></script>
+
+
+
+</body>
+
+</html>
